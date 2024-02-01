@@ -1,13 +1,23 @@
 /**
- * SeekSnow
+ *  SeekSnow
  * @format
  */
 
 import React from 'react';
-import {View} from 'react-native';
+import {View, Text, StyleSheet} from 'react-native';
 
-const App = () => {
-  return <View>SeekSnow 正在开发中</View>;
-};
+function App(): React.JSX.Element {
+  return (
+    <View>
+      <Text style={styles.title}>SeekSnow 正在开发中...</Text>
+    </View>
+  );
+}
+
+const styles = StyleSheet.create({
+  title: {
+    fontSize: 32,
+  },
+});
 
 export default App;
